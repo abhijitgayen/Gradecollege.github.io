@@ -193,6 +193,8 @@ a.menu-link { display: none; }
 .main-menu {
     float: right;
     padding-right: 60px;
+    background-color: #18233a;
+    padding-left: 52px;
 }
 
 .main-menu li {
@@ -231,7 +233,7 @@ a.menu-link { display: none; }
     position: absolute;
     width: 160px;
     background-color: #18233a;
-    opacity: 0;
+    opacity: 0.3;
     visibility: hidden;
     transition: all 0.5s;
 }
@@ -276,6 +278,7 @@ a.menu-link { display: none; }
 .main-nav li:hover a,
 .main-nav li.active a {
     border: 2px solid #f5a425;
+    border-radius: 50%;
 }
 
 @media (max-width: 950px) {
