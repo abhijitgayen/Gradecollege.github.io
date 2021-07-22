@@ -25,6 +25,17 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+
+
+/*==================== SHOW SCROLL TOP ====================*/ 
+function scroll_Top(){
+    const scroll_Top = document.getElementById('scroll-top');
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 760) scroll_Top.classList.add('show-scroll'); else scroll_Top.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scroll_Top)
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
