@@ -10,14 +10,14 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website </title>
+        <title>Abhijit Gayen </title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Abhijit</a>
+                    <a href="#" class="nav__logo">Abhijit<b>.</b></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -40,7 +40,8 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abhijit Gayen</span><br> Student</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Abhijit Gayen</span><br>
+                        <span id="typing" class="typing">Student</span></h1>
                     <!-- here i need to apply animated_textr -->
 
                     <a href="#" class="button">Dawnload CV</a>
@@ -333,11 +334,20 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
+                    <!-- need to add contact details -->
+                    <div class="contact__details">
+            
+
+                    </div>
+
+
+
+
                     <form action="" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                        <input type="button" value="Enter" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -345,7 +355,7 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Abhijit</p>
+            <p class="footer__title">Abhijit<b>.</b></p>
             <div class="footer__social">
                 <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
@@ -364,8 +374,21 @@
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            var typed=new Typed('#typing', {
+                strings: ["Freelancer", "Web Developer", "Web Designer","Math Expert"],
+                typeSpeed: 100,
+                backSpeed: 40,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+            });
+        </script>
     </body>
 </html>
